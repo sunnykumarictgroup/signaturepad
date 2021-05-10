@@ -1,0 +1,54 @@
+
+
+
+  <h1 class="text-header">Signature Pad</h1>
+  <div class="signature-pad">
+    <div class="signature-pad--body">
+      <canvas #sPad width="900" height="500" style="touch-action: none;"></canvas>
+    </div>
+  </div>
+  <br>
+  <br>
+  <section class="container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <button class="btn btn-danger" (click)="clear()">Clear</button>
+          <button class="btn btn-success" (click)="savePNG()">PNG</button>
+          <!-- <button class="btn btn-warning" (click)="undo()">Undo</button>
+          <button class="btn btn-info" (click)="changeColor()">Change Color</button> -->
+          <button class="btn btn-primary" (click)="drawComplete()">Save</button>
+        </div>
+        <div class="col-6">
+         
+          <!-- <button class="btn btn-primary" >JPG</button>
+          <button class="btn btn-secondary" >SVG</button> -->
+        </div>
+        <form enctype="multipart/form-data">
+          <div class="col-6">
+            <input (change)="selectImage($event)" name="sign" class="form-control" type="file" style="width:25%" required>
+          
+            <button class="btn btn-primary" type="button" (click)="onUpload()">Upload</button>
+          </div>
+        </form>
+       
+      </div>
+  </section>
+  <pre>
+    <!-- {{backendRes.spadu.signdata}} -->
+    <img [src]="backendRes.spadu.signdata" alt="Preview" >
+  </pre>
+  
+      
+
+ 
+
+   
+
+
+
+
+
+
+
+ 
+

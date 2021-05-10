@@ -1,0 +1,1 @@
+{"version":3,"file":"signature-processing.module.d.ts","sources":["signature-processing.module.d.ts"],"names":[],"mappings":";;;;;;AAAA;;;;AACA","sourcesContent":["export declare class SignatureProcessingModule {\r\n}\r\n"]}

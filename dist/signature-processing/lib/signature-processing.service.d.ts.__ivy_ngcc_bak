@@ -1,0 +1,7 @@
+import { HttpClient } from '@angular/common/http';
+export declare class SignatureProcessingService {
+    private http;
+    constructor(http: HttpClient);
+    insertSignature(params: any): import("rxjs").Observable<Object>;
+    insertUploadSignature(params: any): import("rxjs").Observable<Object>;
+}
